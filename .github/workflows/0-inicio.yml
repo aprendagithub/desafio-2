@@ -65,9 +65,18 @@ jobs:
             rodapé
             ```
 
-            Os tipos, são obrigatórios, e nós iremos ver cada um deles nas proximas partes desse desafio, já o escopo, é algo mais opcional, 
-            onde você está dando um complemento extra sobre oque esse commit se refere, como por exemplo,se é sobre API, ou algum módulo especifico
+            Os tipos, são obrigatórios,  já o escopo, é algo mais opcional, onde você está dando um complemento extra sobre oque esse commit se refere, como por exemplo,se é sobre API, ou algum módulo especifico
             da aplicação.
+
+            Os tipos existentes, são os seguintes:
+
+            - feat:  usado quando estamos desenvolvendo novas features em nosso projeto;
+            - fix: usado quando precisamos corrigir algum bug encontrado pelo usuário;
+            - docs: usado quando estamos trabalhando em alguma documentação da aplicação;
+            - style: usado para pequenos ajustes em formatação,algum ; que possa ter ficado faltando, é algo que não altera necessariamente oque já está em produção;
+            - refactor: usado quando fazermos alguma refatoração de algum código que já está em produção;
+            - test: usado quando estamos trabalhando nos testes, incluindo novos testes, ou refatorando já existentes;
+            - chore: usado para alteração em scripts ou outros arquivos, como .gitignore por exemplo, que não afetam produção.
 
             Já o assunto, é uma explicação basica sobre a alteração, que vai ser vista de bate pronto quando alguem acessar o log do Git.
 
@@ -79,26 +88,51 @@ jobs:
             Close #1234
             ```
 
-            Nessa primeira parte, vamos falar um pouco sobre um dos tipos commit, o **docs**:
+            Para esse nosso desafio, vamos fazer o seguinte, você vai realizar o clone desse repositório para sua máquina, e vai realizar um commit 
+            usando cada um dos tipos existentes.
 
-            Durante nosso processo de desenvolvimento, uma coisa que é muito comum é a criação de documentações de nossos projetos, e 
-            essas documentações podem ser feitas via arquivos markdown, e para identificar em nosso histórico de commits que nossa alteração
-            estava relacionada a documentação, usamos o padrão **docs**.
+            Você deve fazer cada um dos commits, de forma individual, realizando um git push após cada um para que possa ser contabilizado corretamente.
+            A ordem também é de extrema importância. Você precisa seguir a ordem exata em que foi apresentada acima para que o processo funcione como deveria.
 
-            A estrutura, segue o seguinte modelo:
+            O processo é basicamente o seguinte:
+
+            ```
+            git clone git@github.com:aprendagithub/SEU-REPOSITORIO.git
+            
+            cd SEU-REPOSITORIO
+            ```
+
+            Dentro da pasta você pode criar um novo arquivo, ou alterar o readme.md por exemplo, e logo em seguida executar o comando:
+
+            ```
+            git add NOME-DO-ARQUIVO
+
+            ```
+
+            E então, realizar o commit seguindo a seguinte estrutura (alterando o tipo que você precisar)
             
             ```
-            docs: Alteração na sessão sobre autenticação da API
+            git commit -m 'docs: Alteração na sessão sobre autenticação da API
 
             Alteração na documentação onde é realizada a explicação sobre autenticação na API, que utiliza um Token JWT.
             Essa sessão estava pendente desde a disponibilização da API em produção
 
-            Close #123
+            Close #123'
           
             ```
 
-            Então, agora que você já entendeu esse padrão, que tal realizar um commit utilizando o docs?
-            Vamos lá, após concluir, vamos seguir para o proximo tipo 
+            Depois, você precisa enviar suas alterações para o servidor, executando o comando:
+            ```
+            git push
+            ```
+
+            Agora, sua alteração foi enviada para o GitHub, e se tudo foi feito corretamente, uma nova issue será criada, 
+            avisando que deu tudo certo, e ai, você vai poder ir para a proxima.
+
+            Ah, não se esqueça de fazer um **git pull** no seu repositório antes de fazer a proxima alteração,ok?
+
+            
+            Então vamos lá? Lembrando que o primeiro tipo é **feat**.
 
 
 
