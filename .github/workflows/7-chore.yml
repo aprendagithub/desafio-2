@@ -71,5 +71,5 @@ jobs:
           body: |
             participant:${{ steps.issueinfo.outputs.nome }}
             id:${{ steps.issueinfo.outputs.identificado }}
-            event:desafio_primeiros_passos_github            
+            event:desafio_padroes_commit            
             email:${{ steps.issueinfo.outputs.email }}
