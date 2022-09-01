@@ -97,7 +97,7 @@ jobs:
             O processo é basicamente o seguinte:
 
             ```
-            git clone git@github.com:aprendagithub/SEU-REPOSITORIO.git
+            git clone git@github.com:github-mao-na-massa/SEU-REPOSITORIO.git
             
             cd SEU-REPOSITORIO
             ```
